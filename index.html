@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>居家照護語音助理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="response-section">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <p class="input-label" style="margin: 0;">日文助理回覆：</p>
+                <button id="speak-again" class="small-action-button" style="margin-left: 10px;">🔊 再次朗讀</button>
+            </div>
+            <div class="display-box" id="response-text">ここに日本語の助理の返答が表示されます</div>
+        </section>
+
+        <section id="reference-section">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <p class="input-label" style="margin: 0;">參考翻譯 (繁體中文)：</p>
+                <button id="speak-translation" class="small-action-button" style="margin-left: 10px;">🔊 朗讀翻譯</button>
+            </div>
+            <div class="display-box" id="reference-text">這裡會顯示繁體中文的參考翻譯</div>
+        </section>
+
+        <section id="voice-interaction">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <button id="start-voice" class="small-action-button" style="margin-right: 10px;">🎤 語音輸入</button>
+                <p class="input-label" style="margin: 0;">您的問題 (語音)：</p>
+                <button id="speak-question" class="small-action-button" style="margin-left: 10px;">🔊 朗讀問題</button>
+            </div>
+            <div class="display-box" id="transcription">按下按鈕並說話</div>
+        </section>
+
+        <section id="text-input-interaction">
+            <textarea id="text-input" class="input-box" placeholder="在此輸入您的問題..."></textarea>
+            <button id="send-text" class="action-button">送出</button>
+        </section>
+    </main>
+
+    <footer>
+        <h1>居家照護語音助理</h1>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
